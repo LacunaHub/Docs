@@ -25,10 +25,10 @@ description: >-
 
 Выполните нижеперечисленные шаги, чтобы добавить Лакуну себе на сервер
 
-1. Нажмите на эту [ссылку](https://discord.com/oauth2/authorize?client\_id=740585412560420914\&scope=bot\&permissions=8)
+1. Нажмите на эту [ссылку](https://www.voidlacuna.ru/authorize/add?response\_type=code\&redirect\_uri=https%3A%2F%2Fwww.voidlacuna.ru)
 2. Выберете свой сервер в выпадающем меню
 3. Нажмите кнопку **Авторизовать**
-4. Напишите !`help` в любой канал у себя на сервере
+4. Напишите `/help` в любой канал у себя на сервере
 
 {% hint style="warning" %}
 Для нормального функционирования бота рекомендуется оставить все галочки разрешений активными.
@@ -46,4 +46,3 @@ description: >-
 
 * [Веб-сайт](https://www.voidlacuna.ru)
 * [Официальный сервер](https://discord.gg/6Uy4FmS)
-* [Страничка на Patreon](https://www.patreon.com/voidlacuna)
