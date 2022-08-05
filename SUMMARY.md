@@ -4,21 +4,24 @@
 
 ## Команды <a href="#commands" id="commands"></a>
 
+* [Команды модерирования](commands/moderation.md)
 * [Пользовательские команды](commands/custom-commands/README.md)
-  * [Условия](commands/custom-commands/conditions.md)
-  * [Действия](commands/custom-commands/actions.md)
+  * [Знакомство с JavaScript](commands/custom-commands/introduction-to-javascript.md)
+  * [Глобальные переменные](commands/custom-commands/global-variables.md)
+  * [Функции](commands/custom-commands/functions.md)
+  * [Примеры](commands/custom-commands/examples.md)
 
 ## Модерирование <a href="#moderation" id="moderation"></a>
 
-* [Команды](moderation/commands.md)
 * [Автомодерирование](moderation/automoderation.md)
 * [Журнал модерации](moderation/moderation-log.md)
-* [Журнал действий](moderation/action-log.md)
+* [Репорты](moderation/reports.md)
 
 ## Полезное <a href="#useful" id="useful"></a>
 
-* [Временные голосовые каналы](useful/voice-triggers.md)
-* [Элементы реакций](useful/reactions.md)
+* [Временные голосовые каналы](useful/auto-voices.md)
+* [Интерактивные сообщения](useful/interactive-messages.md)
+* [Интерактивные реакции](useful/interactive-reactions.md)
 * [Уровни](useful/levels.md)
 * [Заменители](useful/replacers/README.md)
   * [Функции](useful/replacers/functions.md)
