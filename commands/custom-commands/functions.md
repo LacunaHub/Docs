@@ -16,7 +16,7 @@
 Данную функцию можно вызвать только 5 раз в одной пользовательской команде.
 {% endhint %}
 
-## getValue(_key_): _any_
+## getValue(_key_): _Promise\<any>_
 
 Возвращает данные на основе указанного ключа.
 
@@ -25,9 +25,9 @@
 ```javascript
 {{ setValue('data', { balance: 500, name: 'Hello World!' }) }}
 
-{{ getValue('data.balance') }} // 500
-{{ getValue('data.name') }} // Hello World!
-{{ getValue('data') }} // { balance: 500, name: 'Hello World!' }
+{{ getValue('data.balance').then(value => { /* do something */ }) }}
+{{ getValue('data.name').then(value => { /* do something */ }) }}
+{{ getValue('data').then(value => { /* do something */ }) }}
 ```
 
 ## deleteValue(_key_): _void_
