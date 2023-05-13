@@ -22,3 +22,8 @@
   * [Массивы](https://learn.javascript.ru/array)
     * [Методы массивов](https://learn.javascript.ru/array-methods)
   * [Дата и время](https://learn.javascript.ru/date)
+* [Обработка ошибок, "try..catch"](https://learn.javascript.ru/try-catch)
+* [Промисы, async/await](https://learn.javascript.ru/async)
+  * [Промисы](https://learn.javascript.ru/promise-basics)
+  * [Цепочка промисов](https://learn.javascript.ru/promise-chaining)
+  * [Async/await](https://learn.javascript.ru/async-await)

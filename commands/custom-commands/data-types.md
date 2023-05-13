@@ -1,4 +1,4 @@
-# Глобальные переменные
+# Типы данных
 
 ## Command
 
@@ -8,17 +8,17 @@
 | --------- | ----------------------------------------------------------------------------------------------- | ---------------------------- |
 | `id`      | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String) | Идентификатор команды        |
 | `name`    | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String) | Название команды             |
-| `options` | array of [options](global-variables.md#undefined)                                               | Переданные аргументы команды |
+| `options` | array of [options](data-types.md#commandoption)                                                 | Переданные аргументы команды |
 
-### Option
+### CommandOption
 
 | Свойство  | Тип                                                                                                                                                                                                                                                                                                   | Описание                                                 |
 | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
 | `name`    | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)                                                                                                                                                                                                       | Название аргумента                                       |
 | `value`   | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String), [number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number) or [boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) | Значение аргумента                                       |
-| `user`    | ?[user](global-variables.md#user)                                                                                                                                                                                                                                                                     | Упомянутый пользователь, если тип аргумента ПОЛЬЗОВАТЕЛЬ |
-| `channel` | ?[channel](global-variables.md#channel)                                                                                                                                                                                                                                                               | Упомянутый канал, если тип аргумента КАНАЛ               |
-| `role`    | ?[role](global-variables.md#role)                                                                                                                                                                                                                                                                     | Упомянутая роль, если тип аргумента РОЛЬ                 |
+| `user`    | ?[user](data-types.md#user)                                                                                                                                                                                                                                                                           | Упомянутый пользователь, если тип аргумента ПОЛЬЗОВАТЕЛЬ |
+| `channel` | ?[channel](data-types.md#channel)                                                                                                                                                                                                                                                                     | Упомянутый канал, если тип аргумента КАНАЛ               |
+| `role`    | ?[role](data-types.md#role)                                                                                                                                                                                                                                                                           | Упомянутая роль, если тип аргумента РОЛЬ                 |
 
 ## Channel
 
@@ -47,8 +47,8 @@
 | `name`                        | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)                                                                                                    | Название сервера                            |
 | `nameAcronym`                 | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)                                                                                                    | Инициалы сервера                            |
 | `icon`                        | ?[string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)                                                                                                   | Ссылка на иконку сервера                    |
-| `channels`                    | array of [channels](global-variables.md#obekt-channel)                                                                                                                                             | Каналы сервера                              |
-| `roles`                       | array of [roles](global-variables.md#undefined)                                                                                                                                                    | Роли сервера                                |
+| `channels`                    | array of [channels](data-types.md#channel)                                                                                                                                                         | Каналы сервера                              |
+| `roles`                       | array of [roles](data-types.md#guildrole)                                                                                                                                                          | Роли сервера                                |
 | `splash`                      | ?[string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)                                                                                                   | Ссылка на баннер приглашений                |
 | `banner`                      | ?[string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)                                                                                                   | Ссылка на баннер                            |
 | `description`                 | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)                                                                                                    | Описание сервера                            |
@@ -66,9 +66,9 @@
 | `defaultMessageNotifications` | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String) or [number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number) | Стандартные уведомления о сообщениях        |
 | `ownerId`                     | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)                                                                                                    | Идентификатор владельца сервера             |
 | `createdTimestamp`            | [number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number)                                                                                                    | Временная метка создания сервера            |
-| `economyCurrencies`           | array of [currencies](global-variables.md#undefined)                                                                                                                                               | Валюты экономики                            |
+| `economyCurrencies`           | array of [currencies](data-types.md#guildcurrency)                                                                                                                                                 | Валюты экономики                            |
 
-### Role
+### GuildRole
 
 | Свойство      | Тип                                                                                               | Описание                                                    |
 | ------------- | ------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
@@ -81,7 +81,7 @@
 | `mentionable` | [boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) | Можно ли упомянуть роль                                     |
 | `position`    | [number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number)   | Позиция роли                                                |
 
-### Currency
+### GuildCurrency
 
 | Свойство | Тип                                                                                             | Описание             |
 | -------- | ----------------------------------------------------------------------------------------------- | -------------------- |
@@ -93,15 +93,27 @@
 
 | Свойство          | Тип                                                                                                                 | Описание                                |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| `user`            | [user](global-variables.md#undefined)                                                                               | Информация о пользователе               |
+| `user`            | [user](data-types.md#undefined)                                                                                     | Информация о пользователе               |
 | `avatar`          | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)                     | Ссылка на серверный аватар              |
 | `nickname`        | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)                     | Никнейм участника                       |
 | `pending`         | [boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean)                   | Прошел ли участник отбор                |
-| `roles`           | array of [roles](global-variables.md#undefined)                                                                     | Роли участника                          |
+| `roles`           | array of [roles](data-types.md#undefined)                                                                           | Роли участника                          |
 | `permissions`     | array of [permissions](https://discord.com/developers/docs/topics/permissions#permissions-bitwise-permission-flags) | Разрешения участника                    |
 | `joinedTimestamp` | [number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number)                     | Временная метка присоединения к серверу |
 
-### User
+## Message
+
+| Свойство           | Тип                                                                                               | Описание                                |
+| ------------------ | ------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| `channel`          | channel                                                                                           | Информация о пользователе               |
+| `createdTimestamp` | [number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number)   | Ссылка на серверный аватар              |
+| `crosspostable`    | [boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) | Никнейм участника                       |
+| `editedTimestamp`  | [number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number)   | Прошел ли участник отбор                |
+| `id`               | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)   | Роли участника                          |
+| `pinnable`         | [boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) | Разрешения участника                    |
+| `url`              | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)   | Временная метка присоединения к серверу |
+
+## User
 
 | Свойство           | Тип                                                                                             | Описание                          |
 | ------------------ | ----------------------------------------------------------------------------------------------- | --------------------------------- |
@@ -110,3 +122,20 @@
 | `discriminator`    | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String) | Дискриминатор пользователя        |
 | `avatar`           | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String) | Ссылка на аватар пользователя     |
 | `createdTimestamp` | [number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number) | Временная метка создания аккаунта |
+
+## UserActivity
+
+| Свойство | Тип                                                                                                       | Описание                     |
+| -------- | --------------------------------------------------------------------------------------------------------- | ---------------------------- |
+| `level`  | [level](data-types.md#level)                                                                              | Уровень пользователя         |
+| `wallet` | array of [numbers](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number) | Баланс кошелька пользователя |
+
+### Level
+
+| Свойство         | Тип                                                                                             | Описание                                                          |
+| ---------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| `rank`           | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String) | Текущий уровень пользователя                                      |
+| `current_xp`     | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String) | Текущее количество опыта                                          |
+| `total_xp`       | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String) | Общее количество опыта                                            |
+| `total_messages` | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String) | Общее количество отправленных сообщений                           |
+| `voice_time`     | [number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number) | Количество времени, проведенного в голосовых каналах (в секундах) |
