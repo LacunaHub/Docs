@@ -14,8 +14,8 @@ description: >-
 
 Заготовьте сообщение в нужном текстовом канале и скопируйте идентификатор.
 
-{% content-ref url="../guides/identifiers.md" %}
-[identifiers.md](../guides/identifiers.md)
+{% content-ref url="../guides/identifiers/" %}
+[identifiers](../guides/identifiers/)
 {% endcontent-ref %}
 
 Перейдите в панель управления своего сервера, откройте страницу **"Полезное"**, снизу будет пункт **"Интерактивные реакции"** и кнопка **"+"** – нажмите на неё. У вас откроется окно создания элемента реакции.

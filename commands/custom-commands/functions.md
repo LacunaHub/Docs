@@ -97,7 +97,7 @@
 Данную функцию можно вызвать только 3 раза в одной пользовательской команде.
 {% endhint %}
 
-## getUserActivity(userId): _Promise<_[_UserActivity_](data-types.md#useractivity)_>_
+## getUserActivity(userId): _Promise<_[_UserActivity_](global-variables.md#useractivity)_>_
 
 Получает активность пользователя
 
@@ -153,7 +153,7 @@
 Данную функцию можно вызвать только 2 раза в одной пользовательской команде.
 {% endhint %}
 
-## sendMessage(channelId, options): _Promise<_[_Message_](data-types.md#message)_>_
+## sendMessage(channelId, options): _Promise<_[_Message_](global-variables.md#message)_>_
 
 Отправляет сообщение в указанный канал
 

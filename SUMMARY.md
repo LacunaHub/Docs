@@ -7,7 +7,7 @@
 * [Команды модерирования](commands/moderation.md)
 * [Пользовательские команды](commands/custom-commands/README.md)
   * [Знакомство с JavaScript](commands/custom-commands/introduction-to-javascript.md)
-  * [Типы данных](commands/custom-commands/data-types.md)
+  * [Типы данных](commands/custom-commands/global-variables.md)
   * [Функции](commands/custom-commands/functions.md)
   * [Примеры](commands/custom-commands/examples.md)
 
@@ -28,7 +28,8 @@
 
 ## Руководства <a href="#guides" id="guides"></a>
 
-* [Идентификаторы](guides/identifiers.md)
+* [Идентификаторы](guides/identifiers/README.md)
+  * [Идентификаторы в Telegram](guides/identifiers/telegram.md)
 * [Аргумент длительности](guides/duration-argument.md)
 * [Временные метки](guides/timestamps.md)
 

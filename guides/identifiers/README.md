@@ -14,7 +14,7 @@ description: Это руководство поможет вам получит�
 
 <div align="left">
 
-<img src="../.gitbook/assets/image (2).png" alt="">
+<img src="../../.gitbook/assets/image (2).png" alt="">
 
 </div>
 
@@ -22,7 +22,7 @@ description: Это руководство поможет вам получит�
 
 <div align="left">
 
-<img src="../.gitbook/assets/image (1).png" alt="">
+<img src="../../.gitbook/assets/image (1).png" alt="">
 
 </div>
 
@@ -30,7 +30,7 @@ description: Это руководство поможет вам получит�
 
 <div align="left">
 
-<img src="../.gitbook/assets/image (2) (1).png" alt="">
+<img src="../../.gitbook/assets/image (2) (1).png" alt="">
 
 </div>
 
@@ -40,7 +40,7 @@ description: Это руководство поможет вам получит�
 
 <div align="left">
 
-<img src="../.gitbook/assets/image (4).png" alt="">
+<img src="../../.gitbook/assets/image (4).png" alt="">
 
 </div>
 
@@ -50,7 +50,7 @@ description: Это руководство поможет вам получит�
 
 <div align="left">
 
-<img src="../.gitbook/assets/image (10).png" alt="">
+<img src="../../.gitbook/assets/image (10).png" alt="">
 
 </div>
 
@@ -58,6 +58,6 @@ description: Это руководство поможет вам получит�
 
 <div align="left">
 
-<img src="../.gitbook/assets/image (11).png" alt="">
+<img src="../../.gitbook/assets/image (11).png" alt="">
 
 </div>
