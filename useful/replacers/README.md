@@ -26,93 +26,15 @@ description: >-
 
 ## Сообщение <a href="#message" id="message"></a>
 
-| Значение                        |     Тип     | Описание                                            |
-| ------------------------------- | :---------: | --------------------------------------------------- |
-| `{message.content}`             |  строковый  | Содержимое отправленного сообщения                  |
-| `{message.channel.name}`        |  строковый  | Название канала отправленного сообщения             |
-| `{message.channel.id}`          |  строковый  | Идентификатор канала отправленного сообщения        |
-| `{message.channel.mention}`     |  упоминание | Упоминание канала отправленного сообщения           |
-| `{message.channel.nsfw}`        |  логический | Есть ли у канала возрастное ограничение             |
-| `{message.channel.position}`    |   числовой  | Позиция канала относительно других каналов          |
-| `{message.channel.topic}`       |  строковый  | Установленный заголовок канала или тема             |
-| `{message.channel.type}`        |  строковый  | Тип канала                                          |
-| `{message.args.N}`              |  ?строковый | Аргумент по указанной позиции                       |
-| `{message.args.map}`            |  строковый  | Все аргументы сообщения                             |
-| `{message.created_at}`          |   числовой  | Временная метка отправки сообщения в миллисекундах  |
-| `{message.edited_at}`           |   числовой  | Временная метка изменения сообщения в миллисекундах |
-| `{message.id}`                  |  строковый  | Идентификатор отправленного сообщения               |
-| `{message.tts}`                 |  логический | Является ли сообщение Text-to-speech                |
-| `{message.type}`                |  строковый  | Тип отправленного сообщения                         |
-| `{message.url}`                 |  строковый  | Ссылка на отправленное сообщение                    |
-| `{message.mentions.roles.N}`    | ?упоминание | Упоминание ролей в сообщении                        |
-| `{message.mentions.channels.N}` | ?упоминание | Упоминание каналов в сообщении                      |
-| `{message.mentions.members.N}`  | ?упоминание | Упоминание пользователей в сообщении                |
+<table><thead><tr><th width="347.85296725976315">Значение</th><th width="166.0393212962103" align="center">Тип</th><th>Описание</th></tr></thead><tbody><tr><td><code>{message.content}</code></td><td align="center">строковый</td><td>Содержимое отправленного сообщения</td></tr><tr><td><code>{message.channel.name}</code></td><td align="center">строковый</td><td>Название канала отправленного сообщения</td></tr><tr><td><code>{message.channel.id}</code></td><td align="center">строковый</td><td>Идентификатор канала отправленного сообщения</td></tr><tr><td><code>{message.channel.mention}</code></td><td align="center">упоминание</td><td>Упоминание канала отправленного сообщения</td></tr><tr><td><code>{message.channel.nsfw}</code></td><td align="center">логический</td><td>Есть ли у канала возрастное ограничение</td></tr><tr><td><code>{message.channel.position}</code></td><td align="center">числовой</td><td>Позиция канала относительно других каналов</td></tr><tr><td><code>{message.channel.topic}</code></td><td align="center">строковый</td><td>Установленный заголовок канала или тема</td></tr><tr><td><code>{message.channel.type}</code></td><td align="center">строковый</td><td>Тип канала</td></tr><tr><td><code>{message.args.N}</code></td><td align="center">?строковый</td><td>Аргумент по указанной позиции</td></tr><tr><td><code>{message.args.map}</code></td><td align="center">строковый</td><td>Все аргументы сообщения</td></tr><tr><td><code>{message.created_at}</code></td><td align="center">числовой</td><td>Временная метка отправки сообщения в миллисекундах</td></tr><tr><td><code>{message.edited_at}</code></td><td align="center">числовой</td><td>Временная метка изменения сообщения в миллисекундах</td></tr><tr><td><code>{message.id}</code></td><td align="center">строковый</td><td>Идентификатор отправленного сообщения</td></tr><tr><td><code>{message.tts}</code></td><td align="center">логический</td><td>Является ли сообщение Text-to-speech</td></tr><tr><td><code>{message.type}</code></td><td align="center">строковый</td><td>Тип отправленного сообщения</td></tr><tr><td><code>{message.url}</code></td><td align="center">строковый</td><td>Ссылка на отправленное сообщение</td></tr><tr><td><code>{message.mentions.roles.N}</code></td><td align="center">?упоминание</td><td>Упоминание ролей в сообщении</td></tr><tr><td><code>{message.mentions.channels.N}</code></td><td align="center">?упоминание</td><td>Упоминание каналов в сообщении</td></tr><tr><td><code>{message.mentions.members.N}</code></td><td align="center">?упоминание</td><td>Упоминание пользователей в сообщении</td></tr></tbody></table>
 
 ## Сервер <a href="#server" id="server"></a>
 
-| Значение                            |     Тип    | Описание                                           |
-| ----------------------------------- | :--------: | -------------------------------------------------- |
-| `{guild.name}`                      |  строковый | Название сервера                                   |
-| `{guild.acronym}`                   |  строковый | Акроним названия сервера (Server Name – SN)        |
-| `{guild.afk_channel_id}`            | ?snowflake | Идентификатор канала простоя на сервере            |
-| `{guild.system_channel_id}`         | ?snowflake | Идентификатор системного канала                    |
-| `{guild.public_updates_channel_id}` | ?snowflake | Идентификатор канала публичных обновлений          |
-| `{guild.rules_channel_id}`          | ?snowflake | Идентификатор канала с правилами                   |
-| `{guild.banner}`                    | ?строковый | Ссылка на баннер сервера                           |
-| `{guild.channels.total}`            |  числовой  | Общее количество каналов на сервере                |
-| `{guild.channels.text}`             |  числовой  | Количество текстовых каналов на сервере            |
-| `{guild.channels.voice}`            |  числовой  | Количество голосовых каналов на сервере            |
-| `{guild.channels.news}`             |  числовой  | Количество новостных каналов на сервере            |
-| `{guild.channels.category}`         |  числовой  | Количество категорий на сервере                    |
-| `{guild.channels.store}`            |  числовой  | Количество магазинов на сервере                    |
-| `{guild.created_at}`                |  числовой  | Временная метка создания сервера в миллисекундах   |
-| `{guild.description}`               | ?строковый | Описание сервера                                   |
-| `{guild.icon}`                      |  строковый | Ссылка на иконку сервера                           |
-| `{guild.id}`                        |  snowflake | Идентификатор сервера                              |
-| `{guild.members.total}`             |  числовой  | Общее количество участников на сервере             |
-| `{guild.members.bots}`              |  числовой  | Количество ботов на сервере                        |
-| `{guild.members.users}`             |  числовой  | Количество пользователей на сервере                |
-| `{guild.owner.username}`            |  строковый | Имя владельца сервера                              |
-| `{guild.owner.avatar}`              |  строковый | Ссылка на аватар владельца сервера                 |
-| `{guild.owner.display_name}`        |  строковый | Отображаемое имя владельца сервера                 |
-| `{guild.owner.id}`                  |  snowflake | Идентификатор владельца сервера                    |
-| `{guild.owner.tag}`                 |  строковый | Тэг владельца сервера                              |
-| `{guild.owner.mention}`             | упоминание | Упоминание владельца сервера                       |
-| `{guild.owner.nickname}`            | ?строковый | Никнейм владельца сервера                          |
-| `{guild.boosters_count}`            |  числовой  | Количество пользователей, которые забустили сервер |
-| `{guild.boost_tier}`                |  числовой  | Уровень буста на сервере                           |
-| `{guild.splash}`                    | ?строковый | Ссылка на задний фон приглашений                   |
-| `{guild.vanity_url}`                | ?строковый | Ссылка на установленное приглашение на сервер      |
+<table><thead><tr><th width="386.10837001146575">Значение</th><th width="150" align="center">Тип</th><th>Описание</th></tr></thead><tbody><tr><td><code>{guild.name}</code></td><td align="center">строковый</td><td>Название сервера</td></tr><tr><td><code>{guild.acronym}</code></td><td align="center">строковый</td><td>Акроним названия сервера (Server Name – SN)</td></tr><tr><td><code>{guild.afk_channel_id}</code></td><td align="center">?snowflake</td><td>Идентификатор канала простоя на сервере</td></tr><tr><td><code>{guild.system_channel_id}</code></td><td align="center">?snowflake</td><td>Идентификатор системного канала</td></tr><tr><td><code>{guild.public_updates_channel_id}</code></td><td align="center">?snowflake</td><td>Идентификатор канала публичных обновлений</td></tr><tr><td><code>{guild.rules_channel_id}</code></td><td align="center">?snowflake</td><td>Идентификатор канала с правилами</td></tr><tr><td><code>{guild.banner}</code></td><td align="center">?строковый</td><td>Ссылка на баннер сервера</td></tr><tr><td><code>{guild.channels.total}</code></td><td align="center">числовой</td><td>Общее количество каналов на сервере</td></tr><tr><td><code>{guild.channels.text}</code></td><td align="center">числовой</td><td>Количество текстовых каналов на сервере</td></tr><tr><td><code>{guild.channels.voice}</code></td><td align="center">числовой</td><td>Количество голосовых каналов на сервере</td></tr><tr><td><code>{guild.channels.news}</code></td><td align="center">числовой</td><td>Количество новостных каналов на сервере</td></tr><tr><td><code>{guild.channels.category}</code></td><td align="center">числовой</td><td>Количество категорий на сервере</td></tr><tr><td><code>{guild.channels.store}</code></td><td align="center">числовой</td><td>Количество магазинов на сервере</td></tr><tr><td><code>{guild.created_at}</code></td><td align="center">числовой</td><td>Временная метка создания сервера в миллисекундах</td></tr><tr><td><code>{guild.description}</code></td><td align="center">?строковый</td><td>Описание сервера</td></tr><tr><td><code>{guild.icon}</code></td><td align="center">строковый</td><td>Ссылка на иконку сервера</td></tr><tr><td><code>{guild.id}</code></td><td align="center">snowflake</td><td>Идентификатор сервера</td></tr><tr><td><code>{guild.members.total}</code></td><td align="center">числовой</td><td>Общее количество участников на сервере</td></tr><tr><td><code>{guild.members.bots}</code></td><td align="center">числовой</td><td>Количество ботов на сервере</td></tr><tr><td><code>{guild.members.users}</code></td><td align="center">числовой</td><td>Количество пользователей на сервере</td></tr><tr><td><code>{guild.owner.username}</code></td><td align="center">строковый</td><td>Имя владельца сервера</td></tr><tr><td><code>{guild.owner.avatar}</code></td><td align="center">строковый</td><td>Ссылка на аватар владельца сервера</td></tr><tr><td><code>{guild.owner.display_name}</code></td><td align="center">строковый</td><td>Отображаемое имя владельца сервера</td></tr><tr><td><code>{guild.owner.id}</code></td><td align="center">snowflake</td><td>Идентификатор владельца сервера</td></tr><tr><td><code>{guild.owner.tag}</code></td><td align="center">строковый</td><td>Тэг владельца сервера</td></tr><tr><td><code>{guild.owner.mention}</code></td><td align="center">упоминание</td><td>Упоминание владельца сервера</td></tr><tr><td><code>{guild.owner.nickname}</code></td><td align="center">?строковый</td><td>Никнейм владельца сервера</td></tr><tr><td><code>{guild.boosters_count}</code></td><td align="center">числовой</td><td>Количество пользователей, которые забустили сервер</td></tr><tr><td><code>{guild.boost_tier}</code></td><td align="center">числовой</td><td>Уровень буста на сервере</td></tr><tr><td><code>{guild.splash}</code></td><td align="center">?строковый</td><td>Ссылка на задний фон приглашений</td></tr><tr><td><code>{guild.vanity_url}</code></td><td align="center">?строковый</td><td>Ссылка на установленное приглашение на сервер</td></tr></tbody></table>
 
 ## Участник <a href="#member" id="member"></a>
 
-| Значение                        |     Тип     | Описание                                                                |
-| ------------------------------- | :---------: | ----------------------------------------------------------------------- |
-| `{member.username}`             |  строковый  | Имя участника                                                           |
-| `{member.avatar}`               |  строковый  | Ссылка на аватар участника                                              |
-| `{member.discriminator}`        |  строковый  | Дискриминатор участника                                                 |
-| `{member.display_name}`         |  строковый  | Отображаемое имя участника                                              |
-| `{member.id}`                   |  snowflake  | Идентификатор участника                                                 |
-| `{member.tag}`                  |  строковый  | Тэг участника                                                           |
-| `{member.bot}`                  |  логический | Является ли пользователь ботом                                          |
-| `{member.mention}`              |  упоминание | Упоминание участника                                                    |
-| `{member.joined_at}`            |   числовой  | Временная метка, когда участник присоединился к серверу в миллисекундах |
-| `{member.nickname}`             |  ?строковый | Установленный никнейм участника                                         |
-| `{member.premium_since}`        |   числовой  | Временная метка с которой участник имеет Discord Nitro в миллисекундах  |
-| `{member.level.rank}`           |   числовой  | Текущий уровень участника                                               |
-| `{member.level.current_xp}`     |   числовой  | Текущее количество очков опыта участника                                |
-| `{member.level.remaining_xp}`   |   числовой  | Оставшееся количество очков опыта до повышения уровня                   |
-| `{member.level.need_xp}`        |   числовой  | Необходимое количество опыта для повышения уровня                       |
-| `{member.level.total_xp}`       |   числовой  | Всего очков опыта                                                       |
-| `{member.level.total_messages}` |   числовой  | Всего отправленных сообщений                                            |
-| `{member.level.voice_time}`     |   числовой  | Всего проведено в голосовых каналах в секундах                          |
-| `{member.voice.name}`           |  ?строковый | Название голосового канала участника                                    |
-| `{member.voice.id}`             |  ?строковый | Идентификатор голосового канала участника                               |
-| `{member.voice.mention}`        | ?упоминание | Упоминание голосового канала участника                                  |
-| `{member.voice.full}`           | ?логический | Заполнен ли голосовой канал участника                                   |
-| `{member.roles.ID.id}`          |  ?строковый | Идентификатор роли участника                                            |
-| `{member.roles.ID.name}`        |  ?строковый | Название роли участника                                                 |
-| `{member.voice.position}`       |  ?числовой  | Позиция голосового канала участника                                     |
+<table><thead><tr><th width="349.384030418251">Значение</th><th align="center">Тип</th><th>Описание</th></tr></thead><tbody><tr><td><code>{member.username}</code></td><td align="center">строковый</td><td>Имя участника</td></tr><tr><td><code>{member.avatar}</code></td><td align="center">строковый</td><td>Ссылка на аватар участника</td></tr><tr><td><code>{member.discriminator}</code></td><td align="center">строковый</td><td>Дискриминатор участника</td></tr><tr><td><code>{member.display_name}</code></td><td align="center">строковый</td><td>Отображаемое имя участника</td></tr><tr><td><code>{member.id}</code></td><td align="center">snowflake</td><td>Идентификатор участника</td></tr><tr><td><code>{member.tag}</code></td><td align="center">строковый</td><td>Тэг участника</td></tr><tr><td><code>{member.bot}</code></td><td align="center">логический</td><td>Является ли пользователь ботом</td></tr><tr><td><code>{member.mention}</code></td><td align="center">упоминание</td><td>Упоминание участника</td></tr><tr><td><code>{member.joined_at}</code></td><td align="center">числовой</td><td>Временная метка, когда участник присоединился к серверу в миллисекундах</td></tr><tr><td><code>{member.nickname}</code></td><td align="center">?строковый</td><td>Установленный никнейм участника</td></tr><tr><td><code>{member.premium_since}</code></td><td align="center">числовой</td><td>Временная метка с которой участник имеет Discord Nitro в миллисекундах</td></tr><tr><td><code>{member.level.rank}</code></td><td align="center">числовой</td><td>Текущий уровень участника</td></tr><tr><td><code>{member.level.current_xp}</code></td><td align="center">числовой</td><td>Текущее количество очков опыта участника</td></tr><tr><td><code>{member.level.remaining_xp}</code></td><td align="center">числовой</td><td>Оставшееся количество очков опыта до повышения уровня</td></tr><tr><td><code>{member.level.need_xp}</code></td><td align="center">числовой</td><td>Необходимое количество опыта для повышения уровня</td></tr><tr><td><code>{member.level.total_xp}</code></td><td align="center">числовой</td><td>Всего очков опыта</td></tr><tr><td><code>{member.level.total_messages}</code></td><td align="center">числовой</td><td>Всего отправленных сообщений</td></tr><tr><td><code>{member.level.voice_time}</code></td><td align="center">числовой</td><td>Всего проведено в голосовых каналах в секундах</td></tr><tr><td><code>{member.voice.name}</code></td><td align="center">?строковый</td><td>Название голосового канала участника</td></tr><tr><td><code>{member.voice.id}</code></td><td align="center">?строковый</td><td>Идентификатор голосового канала участника</td></tr><tr><td><code>{member.voice.mention}</code></td><td align="center">?упоминание</td><td>Упоминание голосового канала участника</td></tr><tr><td><code>{member.voice.full}</code></td><td align="center">?логический</td><td>Заполнен ли голосовой канал участника</td></tr><tr><td><code>{member.roles.ID.id}</code></td><td align="center">?строковый</td><td>Идентификатор роли участника</td></tr><tr><td><code>{member.roles.ID.name}</code></td><td align="center">?строковый</td><td>Название роли участника</td></tr><tr><td><code>{member.voice.position}</code></td><td align="center">?числовой</td><td>Позиция голосового канала участника</td></tr></tbody></table>
 
 ## Подписки <a href="#subscriptions" id="subscriptions"></a>
 

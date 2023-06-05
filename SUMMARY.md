@@ -5,11 +5,12 @@
 ## Команды <a href="#commands" id="commands"></a>
 
 * [Команды модерирования](commands/moderation.md)
-* [Пользовательские команды](commands/custom-commands/README.md)
-  * [Знакомство с JavaScript](commands/custom-commands/introduction-to-javascript.md)
-  * [Типы данных](commands/custom-commands/global-variables.md)
-  * [Функции](commands/custom-commands/functions.md)
-  * [Примеры](commands/custom-commands/examples.md)
+* [Пользовательское поведение](commands/custom-behavior/README.md)
+  * [Знакомство с JavaScript](commands/custom-behavior/introduction-to-javascript.md)
+  * [Глобальные переменные](commands/custom-behavior/globalnye-peremennye.md)
+  * [Функции](commands/custom-behavior/functions.md)
+  * [Типы данных](commands/custom-behavior/data-types.md)
+  * [Примеры](commands/custom-behavior/examples.md)
 
 ## Модерирование <a href="#moderation" id="moderation"></a>
 
