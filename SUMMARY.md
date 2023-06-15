@@ -7,7 +7,7 @@
 * [Команды модерирования](commands/moderation.md)
 * [Пользовательское поведение](commands/custom-behavior/README.md)
   * [Знакомство с JavaScript](commands/custom-behavior/introduction-to-javascript.md)
-  * [Глобальные переменные](commands/custom-behavior/globalnye-peremennye.md)
+  * [Глобальные переменные](commands/custom-behavior/global-variables.md)
   * [Функции](commands/custom-behavior/functions.md)
   * [Типы данных](commands/custom-behavior/data-types.md)
   * [Примеры](commands/custom-behavior/examples.md)

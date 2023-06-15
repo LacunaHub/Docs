@@ -54,11 +54,11 @@
 
 | Свойство          | Тип                                                                                                                 | Описание                                |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| `user`            | [user](data-types.md#undefined)                                                                                     | Информация о пользователе               |
+| `user`            | [user](data-types.md#user)                                                                                          | Информация о пользователе               |
 | `avatar`          | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)                     | Ссылка на серверный аватар              |
 | `nickname`        | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)                     | Никнейм участника                       |
 | `pending`         | [boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean)                   | Прошел ли участник отбор                |
-| `roles`           | array of [roles](data-types.md#undefined)                                                                           | Роли участника                          |
+| `roles`           | array of [roles](data-types.md#guildrole)                                                                           | Роли участника                          |
 | `permissions`     | array of [permissions](https://discord.com/developers/docs/topics/permissions#permissions-bitwise-permission-flags) | Разрешения участника                    |
 | `joinedTimestamp` | [number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number)                     | Временная метка присоединения к серверу |
 
