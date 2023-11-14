@@ -29,6 +29,7 @@
 
 ## Руководства <a href="#guides" id="guides"></a>
 
+* [Подписки](guides/subscriptions.md)
 * [Идентификаторы](guides/identifiers/README.md)
   * [Идентификаторы в Telegram](guides/identifiers/telegram.md)
 * [Аргумент длительности](guides/duration-argument.md)
