@@ -61,7 +61,7 @@
 | `roles`           | array of [roles](data-types.md#guildrole)                                                                           | Роли участника                          |
 | `permissions`     | array of [permissions](https://discord.com/developers/docs/topics/permissions#permissions-bitwise-permission-flags) | Разрешения участника                    |
 | `joinedTimestamp` | [number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number)                     | Временная метка присоединения к серверу |
-| `voiceState`      | [VoiceState](data-types.md#voicestate)                                                                              | Голосовое состояние                     |
+| `voice`           | [VoiceState](data-types.md#voicestate)                                                                              | Голосовое состояние                     |
 
 ## Channel
 
@@ -222,7 +222,7 @@
 | ------------ | -------------------------------------------------------------------------------------------------- | ----------------------------------------- |
 | `channelId`  | ?[string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)   | Идентификатор канала голосового состояния |
 | `deaf`       | ?[boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) | Отключён ли звук                          |
-| `id`         | ?[boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) | Идентификатор участника                   |
+| `id`         | ?[string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)   | Идентификатор участника                   |
 | `mute`       | ?[boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) | Отключён ли микрофон                      |
 | `selfDeaf`   | ?[boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) | Отключён ли звук локально                 |
 | `selfMute`   | ?[boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) | Отключён ли микрофон локально             |
