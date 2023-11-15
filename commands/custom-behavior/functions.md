@@ -39,6 +39,26 @@
 {{ deleteValue('data') }}
 ```
 
+## createChannel(options): _Promise<_[_Channel_](data-types.md#channel)_>_ <a href="#createchannel" id="createchannel"></a>
+
+Создает новый канал на сервере.
+
+<table><thead><tr><th width="208">Параметр</th><th width="207">Тип</th><th width="153" data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>options</code></td><td><a href="data-types.md#createchanneloptions">CreateChannelOptions</a></td><td>true</td><td>Опции для канала</td></tr></tbody></table>
+
+{% hint style="info" %}
+Данная функция доступна только для действия "Выполнить код".
+{% endhint %}
+
+## createThread(channelId, options): _Promise<_[_Thread_](data-types.md#thread)_>_ <a href="#createthread" id="createthread"></a>
+
+Создает новый ветку в канале.
+
+<table><thead><tr><th width="208">Параметр</th><th width="201">Тип</th><th width="153" data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>channelId</code></td><td><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td>true</td><td>Идентификатор канала, в котором будет создана ветка</td></tr><tr><td><code>options</code></td><td><a href="data-types.md#createthreadoptions">CreateThreadOptions</a></td><td>true</td><td>Опции для ветки</td></tr></tbody></table>
+
+{% hint style="info" %}
+Данная функция доступна только для действия "Выполнить код".
+{% endhint %}
+
 ## deferReply(options): _Promise\<void>_ <a href="#deferreply" id="deferreply"></a>
 
 Откладывает ответ на команду
@@ -57,7 +77,27 @@
 Данная функция доступна только для действия "Выполнить код".
 {% endhint %}
 
-## deleteReply(): _Promise\<void>_
+## deleteChannel(channelId): _Promise\<void>_ <a href="#deletechannel" id="deletechannel"></a>
+
+Удаляет канал или ветку.
+
+<table><thead><tr><th>Параметр</th><th width="163">Тип</th><th width="150" data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>channelId</code></td><td><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td>true</td><td>Идентификатор канала, который нужно удалить</td></tr></tbody></table>
+
+{% hint style="info" %}
+Данная функция доступна только для действия "Выполнить код".
+{% endhint %}
+
+## deleteMessage(channelId, messageId): _Promise\<void>_ <a href="#deletemessage" id="deletemessage"></a>
+
+Удаляет сообщение.
+
+<table><thead><tr><th>Параметр</th><th width="163">Тип</th><th width="150" data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>channelId</code></td><td><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td>true</td><td>Идентификатор канала, в который находится сообщение</td></tr><tr><td><code>messageId</code></td><td><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td>true</td><td>Идентификатор сообщение, которое нужно удалить</td></tr></tbody></table>
+
+{% hint style="info" %}
+Данная функция доступна только для действия "Выполнить код".
+{% endhint %}
+
+## deleteReply(): _Promise\<void>_ <a href="#deletereply" id="deletereply"></a>
 
 Удаляет ответ на команду
 

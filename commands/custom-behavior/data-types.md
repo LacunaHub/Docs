@@ -61,6 +61,7 @@
 | `roles`           | array of [roles](data-types.md#guildrole)                                                                           | Роли участника                          |
 | `permissions`     | array of [permissions](https://discord.com/developers/docs/topics/permissions#permissions-bitwise-permission-flags) | Разрешения участника                    |
 | `joinedTimestamp` | [number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number)                     | Временная метка присоединения к серверу |
+| `voiceState`      | [VoiceState](data-types.md#voicestate)                                                                              | Голосовое состояние                     |
 
 ## Channel
 
@@ -77,6 +78,19 @@
 | `position`         | [number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number)    | Позиция канала относительно других          |
 | `rateLimitPerUser` | [number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number)    | Медленные режим в секундах                  |
 | `topic`            | ?[string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)   | Тема канала                                 |
+
+## Thread
+
+| Свойство            | Тип                                                                                               | Описание                           |
+| ------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| `archived`          | [boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) | Архивирована ли ветка              |
+| `archivedTimestamp` | ?[number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number)  | Временная метка архивирования      |
+| `createdTimestamp`  | [number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number)   | Временная метка создания ветки     |
+| `id`                | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)   | Идентификатор ветки                |
+| `ownerId`           | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)   | Автор ветки                        |
+| `parentId`          | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)   | Канал ветки                        |
+| `rateLimitPerUser`  | ?[number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number)  | Слоумод                            |
+| `totalMessageSent`  | ?[number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number)  | Всего отправлено сообщений в ветке |
 
 ## Command
 
@@ -202,6 +216,21 @@
 | `total_messages` | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String) | Общее количество отправленных сообщений                           |
 | `voice_time`     | [number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number) | Количество времени, проведенного в голосовых каналах (в секундах) |
 
+## VoiceState
+
+| Свойство     | Тип                                                                                                | Описание                                  |
+| ------------ | -------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| `channelId`  | ?[string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)   | Идентификатор канала голосового состояния |
+| `deaf`       | ?[boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) | Отключён ли звук                          |
+| `id`         | ?[boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) | Идентификатор участника                   |
+| `mute`       | ?[boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) | Отключён ли микрофон                      |
+| `selfDeaf`   | ?[boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) | Отключён ли звук локально                 |
+| `selfMute`   | ?[boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) | Отключён ли микрофон локально             |
+| `selfVideo`  | ?[boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) | Включено ли видео                         |
+| `serverDeaf` | ?[boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) | Отключён ли звук глобально                |
+| `serverMute` | ?[boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) | Отключён ли микрофон глобально            |
+| `streaming`  | ?[boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) | Запущен ли стрим                          |
+
 ## MessageOptions
 
 | Свойство     | Тип                                                                                                                          | Описание                    |
@@ -218,6 +247,28 @@
 | ----------- | -------------------------------------------------------------------------------------------------- | ------------------- |
 | `tts`       | ?[boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) | Text-to-speech      |
 | `ephemeral` | ?[boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) | Эфемерное сообщение |
+
+## CreateChannelOptions
+
+| Свойство           | Тип                                                                                                | Описание                                                                                                     |
+| ------------------ | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| `name`             | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)    | Название канала                                                                                              |
+| `type`             | ?[number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number)   | Тип канала. 0 - текстовый, 2 - голосовой, 4 - категория, 5 - новостной, 13 - трибуна, 15 - форум, 16 - медиа |
+| `topic`            | ?[string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)   | Заголовок канала                                                                                             |
+| `nsfw`             | ?[boolean](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Boolean) | Ограничение по возрасту                                                                                      |
+| `bitrate`          | ?[number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number)   | Битрейт канала                                                                                               |
+| `userLimit`        | ?[number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number)   | Лимит пользователей                                                                                          |
+| `position`         | ?[number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number)   | Позиция канала                                                                                               |
+| `rateLimitPerUser` | ?[number](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/Number)   | Слоумод                                                                                                      |
+| `parent`           | ?[string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)   | Категория канала                                                                                             |
+
+## CreateThreadOptions
+
+| Свойство    | Тип                                                                                              | Описание                                                                                           |
+| ----------- | ------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
+| `name`      | [string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String)  | Название канала                                                                                    |
+| `message`   | ?[MessageOptions](data-types.md#messageoptions)                                                  | Объект сообщения. В случае создания ветки в форуме. Взаимозаменяемые со свойством `messageId`      |
+| `messageId` | ?[string](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global\_Objects/String) | Идентификатор сообщения, для которого будет создана ветка. Взаимозаменяемые со свойством `message` |
 
 ## DeferReplyOptions
 

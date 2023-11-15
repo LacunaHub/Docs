@@ -4,6 +4,7 @@ description: >-
   Lacuna.
 cover: .gitbook/assets/1920x1080.png
 coverY: 0
+layout: landing
 ---
 
 # Главная
