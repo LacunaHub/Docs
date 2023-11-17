@@ -11,6 +11,7 @@
   * [Функции](commands/custom-behavior/functions.md)
   * [Типы данных](commands/custom-behavior/data-types.md)
   * [Примеры](commands/custom-behavior/examples.md)
+  * [Модальные окна](commands/custom-behavior/modal.md)
 
 ## Модерирование <a href="#moderation" id="moderation"></a>
 
