@@ -1,3 +1,51 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Глобальные переменные
 
-<table><thead><tr><th width="211">Название</th><th width="156.33333333333331">Тип</th><th>Описание</th></tr></thead><tbody><tr><td><code>guild</code></td><td><a href="data-types.md#guild">Guild</a></td><td>Объект сервера</td></tr><tr><td><code>member</code></td><td><a href="data-types.md#member">Member</a></td><td>Участник, который инициировал событие</td></tr><tr><td><code>channel</code></td><td><a href="data-types.md#channel">Channel</a></td><td>Канал события</td></tr><tr><td><code>command</code></td><td><a href="data-types.md#command">Command</a></td><td>Объект команды. Доступно только для пользовательских команд</td></tr><tr><td><code>interaction</code></td><td><a href="data-types.md#interaction">Interaction</a></td><td>Объект взаимодействия. Доступно только в автоматизации для триггеров <code>INTERACTION_BUTTON</code>, <code>INTERACTION_SELECT_MENU</code> и <code>INTERACTION_MODAL_SUBMIT</code></td></tr><tr><td><code>message</code></td><td><a href="data-types.md#message">Message</a></td><td>Объект сообщения. Доступно только в автоматизации для триггеров <code>MESSAGE_CREATE</code>, <code>MESSAGE_DELETE</code> и <code>MESSAGE_UPDATE</code></td></tr><tr><td><code>voiceState</code></td><td><a href="data-types.md#voicestate">VoiceState</a></td><td>Объект голосового состояния. Доступно только в автоматизации для триггеров <code>VOICE_CONNECT</code> и <code>VOICE_DISCONNECT</code></td></tr></tbody></table>
+## channel
+
+Канал события
+
+[Channel](data-types/channel.md)
+
+## guild
+
+Объект сервера.
+
+[Guild](data-types/guild.md)
+
+## member
+
+Участник, который инициировал событие.
+
+[Member](data-types/member.md)
+
+## interaction
+
+Объект взаимодействия. Доступно только в автоматизации для триггеров `INTERACTION_BUTTON`, `INTERACTION_SELECT_MENU` и `INTERACTION_MODAL_SUBMIT`.
+
+Interaction
+
+## message
+
+Объект сообщения. Доступно только в автоматизации для триггеров `MESSAGE_CREATE`, `MESSAGE_DELETE` и `MESSAGE_UPDATE`.
+
+Message
+
+## voiceState
+
+Объект голосового состояния. Доступно только в автоматизации для триггеров `VOICE_CONNECT` и `VOICE_DISCONNECT`.
+
+VoiceState

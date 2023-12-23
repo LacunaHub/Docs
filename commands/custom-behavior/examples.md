@@ -1,8 +1,22 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # Примеры
 
 ## Аргументы команды <a href="#command-arguments" id="command-arguments"></a>
 
-Пример ниже объявляет переменную `reason` и присваивает ей [значение аргумента](data-types.md#commandoption) **причина**. Если значение аргумента не указано, то вернёт `undefined`.
+Пример ниже объявляет переменную `reason` и присваивает ей [значение аргумента](data-types/#commandoption) **причина**. Если значение аргумента не указано, то вернёт `undefined`.
 
 ```javascript
 {{ let reason = command.options.find(i => i.name === 'причина') }}
@@ -12,7 +26,7 @@
 {{ reason.value }} // значение аргумента
 ```
 
-Мы также можем получить объект [`user`](data-types.md#user), если установленный тип аргумента **ПОЛЬЗОВАТЕЛЬ**.
+Мы также можем получить объект [`user`](data-types/#user), если установленный тип аргумента **ПОЛЬЗОВАТЕЛЬ**.
 
 ```javascript
 {{ let user = command.options.find(i => i.name === 'пользователь') }}
@@ -23,7 +37,7 @@
 
 Обратите внимание, что в примере идёт обращение к свойству `user`, а не к `value`. Свойство `value` в данном случае будет иметь значение идентификатора упомянутого пользователя.
 
-Со всеми свойствами объекта `command` можно ознакомиться [здесь](data-types.md#command).
+Со всеми свойствами объекта `command` можно ознакомиться [здесь](data-types/#command).
 
 ## Хранение значений <a href="#values-storing" id="values-storing"></a>
 
@@ -77,7 +91,7 @@ function choose(...args) {
 
 Если вы хотите, чтобы в пользовательской команде была проверка на права, то вам нужно добавить условие **Сравнение значений** и выбрать оператор **РАВНО**.
 
-У объекта [`member`](data-types.md#member) есть свойство `permissions` и оно является массивом [разрешений](https://discord.com/developers/docs/topics/permissions#permissions-bitwise-permission-flags) участника.
+У объекта [`member`](data-types/#member) есть свойство `permissions` и оно является массивом [разрешений](https://discord.com/developers/docs/topics/permissions#permissions-bitwise-permission-flags) участника.
 
 ```javascript
 // здесь мы проверяем есть ли право
