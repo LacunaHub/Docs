@@ -73,7 +73,7 @@ void
 
 ## createThread(channelId, options): _Promise<_[_Thread_](data-types/#thread)_>_ <a href="#createthread" id="createthread"></a>
 
-Создает новый ветку в канале.
+Создает новую ветку в канале.
 
 <table><thead><tr><th width="208">Параметр</th><th width="201">Тип</th><th width="153" data-type="checkbox">Обязательный</th><th>Описание</th></tr></thead><tbody><tr><td><code>channelId</code></td><td><a href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></td><td>true</td><td>Идентификатор канала, в котором будет создана ветка</td></tr><tr><td><code>options</code></td><td><a href="data-types/createthreadoptions.md">CreateThreadOptions</a></td><td>true</td><td>Опции для ветки</td></tr></tbody></table>
 
