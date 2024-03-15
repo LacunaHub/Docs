@@ -7,7 +7,7 @@ description: >-
 
 # Уровни
 
-Настройки уровней можно найти в панели управления сервером на [сайте](https://www.voidlacuna.ru/dashboard) во вкладке **Уровни и награды**
+Настройки уровней можно найти в панели управления сервером на [сайте](https://lacunabot.com/@me/guilds) во вкладке **Уровни и награды**
 
 {% embed url="https://www.youtube.com/watch?v=duuD3dUjf-g" %}
 

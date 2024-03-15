@@ -2,7 +2,7 @@
 
 _Автор: Aleх#0001_
 
-Как вы знаете, заменители `created_at` участника сервера, сообщения, гильдии и `joined_at` участника сервера возвращают время в миллисекундах от 1 января 1970 года — Unix-время. Конвертировать эти числа в понятную для человека дату можно двумя способами: используя временные метки Discord (`<t:Unix-время>`: [https://discord.com/developers/docs/reference#message-formatting-timestamp-styles](https://discord.com/developers/docs/reference#message-formatting-timestamp-styles)) и функцию-заменитель `DATE`: [https://docs.voidlacuna.ru/useful/replacers/functions#date](https://docs.voidlacuna.ru/useful/replacers/functions#date)
+Как вы знаете, заменители `created_at` участника сервера, сообщения, гильдии и `joined_at` участника сервера возвращают время в миллисекундах от 1 января 1970 года — Unix-время. Конвертировать эти числа в понятную для человека дату можно двумя способами: используя [временные метки Discord `<t:Unix-время>`](https://discord.com/developers/docs/reference#message-formatting-timestamp-styles) или [функцию-заменитель `DATE`](https://docs.lacunabot.com/useful/replacers/functions#date).
 
 ### **Временные метки Discord** <a href="#discord-timestamps" id="discord-timestamps"></a>
 
